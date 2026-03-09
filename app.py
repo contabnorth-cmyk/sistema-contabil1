@@ -18,7 +18,7 @@ DB_PATH = APP_DIR / "contabilidade.db"
 DOCS_DIR = APP_DIR / "documentos_clientes"
 DOCS_DIR.mkdir(exist_ok=True)
 
-st.set_page_config(page_title="Contab Office Pro", page_icon="📊", layout="wide")
+st.set_page_config(page_title="Contab North Consultorias", page_icon="📊", layout="wide")
 
 st.markdown("""
 <style>
