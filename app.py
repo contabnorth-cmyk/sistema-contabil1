@@ -25,14 +25,14 @@ st.markdown("""
 .block-container {padding-top: 1.2rem; padding-bottom: 2rem;}
 [data-testid="stMetricValue"] {font-size: 1.7rem;}
 [data-testid="stSidebar"] {background: linear-gradient(180deg,#0f172a 0%, #111827 100%);}
-[data-testid="stSidebar"] * {color: #f8fafc;}
+[data-testid="stSidebar"] * {color: #1e3a8a;}
 .stTabs [data-baseweb="tab-list"] {gap: 8px;}
 .stTabs [data-baseweb="tab"] {
-    background: #f8fafc; border-radius: 10px; padding: .5rem .9rem; border: 1px solid #e5e7eb;
+    background: #e5e7eb; border-radius: 10px; padding: .5rem .9rem; border: 1px solid #cbd5;
 }
-.stTabs [aria-selected="true"] {background: #e0f2fe !important;}
+.stTabs [aria-selected="true"] {background: #2563eb !important;}
 .card {
-    border: 1px solid #e5e7eb; border-radius: 16px; padding: 1rem 1.1rem; background: white;
+    border: 3px solid #1d4ed8; border-radius: 16px; padding: 1rem 1.1rem; background: white;
     box-shadow: 0 4px 18px rgba(15,23,42,.05); margin-bottom: .8rem;
 }
 .small-muted {color: #64748b; font-size: .92rem;}
