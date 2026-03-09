@@ -161,7 +161,7 @@ def init_db():
     if not admin:
         execute(
             "INSERT INTO users (username, password_hash, full_name, role) VALUES (?, ?, ?, ?)",
-            ("admin", hash_password("123456"), "Administrador", "admin"),
+            ("admin", hash_password("Rba182326*"), "Administrador", "admin"),
         )
 
     templates = execute("SELECT COUNT(*) AS n FROM task_templates", fetch=True)[0]["n"]
