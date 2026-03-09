@@ -757,7 +757,7 @@ if modo == "Escritório":
     if not st.session_state.user:
         login_screen()
     else:
-        st.title("📊 Contab Office Pro")
+        st.title("📊 Contab North Consultorias")
         st.caption("Cadastro, cobranças, tarefas, financeiro, documentos, relatórios e portal do cliente")
         tabs = st.tabs(["Dashboard", "Clientes", "Cobranças", "Tarefas", "Financeiro", "Documentos", "Relatórios", "Configurações"])
         with tabs[0]:
