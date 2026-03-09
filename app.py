@@ -28,7 +28,7 @@ st.markdown("""
 [data-testid="stSidebar"] * {color: #1e3a8a;}
 .stTabs [data-baseweb="tab-list"] {gap: 8px;}
 .stTabs [data-baseweb="tab"] {
-    background: #e5e7eb; border-radius: 10px; padding: .5rem .9rem; border: 1px solid #cbd5;
+    background: #e5e7eb; color: #1e293b !important; border-radius: 10px; padding: .5rem .9rem; border: 1px solid #cbd5;
 }
 .stTabs [aria-selected="true"] {background: #2563eb !important;}
 .card { 
