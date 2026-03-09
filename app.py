@@ -31,7 +31,7 @@ st.markdown("""
     background: #e5e7eb; border-radius: 10px; padding: .5rem .9rem; border: 1px solid #cbd5;
 }
 .stTabs [aria-selected="true"] {background: #2563eb !important;}
-.card {
+.card { 
     border: 3px solid #1d4ed8; border-radius: 16px; padding: 1rem 1.1rem; background: #1e293b;
     box-shadow: 0 4px 18px rgba(15,23,42,.05); margin-bottom: .8rem;
 }
