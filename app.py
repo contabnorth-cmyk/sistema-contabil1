@@ -190,7 +190,7 @@ def init_db():
             ("Folha de pagamento", "Processar folha e encargos", "Folha", "Pessoal", 30, 1),
             ("Enviar pró-labore", "Calcular e enviar pró-labore", "Pró-labore", "Pessoal", 28, 1),
             ("Conferir impostos", "Revisar tributos do mês", "Impostos", "Fiscal", 25, 1),
-            ("Obrigações acessórias", "Entregar declarações obrigatórias", "Acessórias", "Fiscal", 15, 1),
+            ("Envio da Declaração Dirf", "Entregar declarações obrigatórias", "Acessórias", "Fiscal", 15, 1),
         ]
         execute(
             "INSERT INTO task_templates (nome_tarefa, descricao, obrigacao, setor, dia_vencimento, ativa) VALUES (?, ?, ?, ?, ?, ?)",
@@ -202,7 +202,7 @@ def init_db():
         "office_name": "Meu Escritório Contábil",
         "office_whatsapp": "",
         "office_email": "",
-        "logo_text": "Contab Office Pro",
+        "logo_text": "Contab North Consultorias",
     }
     for k, v in defaults.items():
         row = execute("SELECT valor FROM app_settings WHERE chave=?", (k,), fetch=True)
