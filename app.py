@@ -188,9 +188,9 @@ def init_db():
         default_templates = [
             ("Apurar DAS", "Conferir faturamento e gerar guia DAS", "DAS", "Fiscal", 20, 1),
             ("Folha de pagamento", "Processar folha e encargos", "Folha", "Pessoal", 30, 1),
-            ("Enviar pró-labore", "Calcular e enviar pró-labore", "Pró-labore", "Pessoal", 28, 1),
+            ("Enviar pró-labore", "Calcular e enviar pró-labor", "Pró-labore", "Pessoal", 28, 1),
             ("Conferir impostos", "Revisar tributos do mês", "Impostos", "Fiscal", 25, 1),
-            ("Envio da Declaração Dirf", "Entregar declarações obrigatórias", "Acessórias", "Fiscal", 15, 1),
+            ("Obrigações Acessorias", "Entregar declarações obrigatórias", "Acessórias", "Fiscal", 15, 1),
         ]
         execute(
             "INSERT INTO task_templates (nome_tarefa, descricao, obrigacao, setor, dia_vencimento, ativa) VALUES (?, ?, ?, ?, ?, ?)",
