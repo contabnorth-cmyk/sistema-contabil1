@@ -17,7 +17,7 @@ APP_DIR = Path(__file__).resolve().parent
 import psycopg2
 
 conn = psycopg2.connect(
-    "postgresql://postgres.pygxxljdlfzliuotnte:Contab%402026@aws-1-sa-east-1.pooler.supabase.com:6543/postgres",
+    "postgresql://postgres_pygxxljdlfzliuotnte:Contab%402026@aws-1-sa-east-1.pooler.supabase.com:6543/postgres",
     sslmode="require"
 )
 DOCS_DIR = APP_DIR / "documentos_clientes"
