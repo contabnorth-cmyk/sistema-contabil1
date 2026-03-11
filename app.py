@@ -1,6 +1,6 @@
 import os
 import re
-import sqlite3
+import psycopg2
 import hashlib
 from datetime import date, datetime
 from calendar import monthrange
@@ -14,7 +14,9 @@ from reportlab.pdfgen import canvas
 from reportlab.lib.units import cm
 
 APP_DIR = Path(__file__).resolve().parent
-DB_PATH = APP_DIR / "contabilidade.db"
+DATABASE_URL = "postgresql://postgres:Contab%402026@db.pygxxljdlfzliuotnte.supabase.co:5432/postgres"
+
+conn = psycopg2.connect(DATABASE_URL)
 DOCS_DIR = APP_DIR / "documentos_clientes"
 DOCS_DIR.mkdir(exist_ok=True)
 
