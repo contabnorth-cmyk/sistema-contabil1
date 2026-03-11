@@ -14,12 +14,10 @@ from reportlab.pdfgen import canvas
 from reportlab.lib.units import cm
 
 APP_DIR = Path(__file__).resolve().parent
+import psycopg2
+
 conn = psycopg2.connect(
-    host="aws-1-sa-east-1.pooler.supabase.com",
-    port=5432,
-    database="postgres",
-    user="postgres.pygxxljdlfzliuotnte",
-    password="Contab@2026",
+    "postgresql://postgres.pygxxljdlfzliuotnte:Contab%402026@aws-1-sa-east-1.pooler.supabase.com:6543/postgres",
     sslmode="require"
 )
 DOCS_DIR = APP_DIR / "documentos_clientes"
