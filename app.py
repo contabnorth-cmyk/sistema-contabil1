@@ -15,7 +15,7 @@ from reportlab.lib.units import cm
 
 APP_DIR = Path(__file__).resolve().parent
 DATABASE_URL = "postgres://postgres.pygxxljdlfzliuotnte:Contab%402026@aws-1-sa-east-1.pooler.supabase.com:6543/postgres?sslmode=require&gssencmode=disable"
-conn = psycopg2.connect(DATABASE_URL)
+conn = psycopg2.connect(DATABASE_URL, sslmode="require")
 DOCS_DIR = APP_DIR / "documentos_clientes"
 DOCS_DIR.mkdir(exist_ok=True)
 
