@@ -1,6 +1,5 @@
 import os
 import re
-import psycopg2
 import hashlib
 from datetime import date, datetime
 from calendar import monthrange
@@ -14,6 +13,7 @@ from reportlab.pdfgen import canvas
 from reportlab.lib.units import cm
 
 APP_DIR = Path(__file__).resolve().parent
+
 import psycopg2
 
 conn = psycopg2.connect(
