@@ -180,7 +180,7 @@ def init_db():
     if not admin:
         execute(
             "INSERT INTO users (username, password_hash, full_name, role) VALUES (?, ?, ?, ?)",
-            ("admin", hash_password("Rba182326*"), "Administrador", "admin"),
+            ("admin", hash_password("123456"), "Administrador", "admin"),
         )
 
     templates = execute("SELECT COUNT(*) AS n FROM task_templates", fetch=True)[0]["n"]
@@ -340,7 +340,7 @@ if "portal_client" not in st.session_state:
     st.session_state.portal_client = None
 
 with st.sidebar:
-    st.markdown("## 📊 Contab Office Pro")
+    st.markdown("## 📊 Contab North Consultorias")
     st.caption("Sistema para escritório de contabilidade")
     modo = st.radio("Acesso", ["Escritório", "Portal do cliente"], label_visibility="collapsed")
     st.markdown("---")
