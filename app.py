@@ -16,7 +16,7 @@ from reportlab.lib.units import cm
 APP_DIR = Path(__file__).resolve().parent
 conn = psycopg2.connect(
     host="aws-1-sa-east-1.pooler.supabase.com",
-    port=6543,
+    port=5432,
     database="postgres",
     user="postgres.pygxxljdlfzliuotnte",
     password="Contab@2026",
