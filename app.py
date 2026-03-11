@@ -14,7 +14,7 @@ from reportlab.pdfgen import canvas
 from reportlab.lib.units import cm
 
 APP_DIR = Path(__file__).resolve().parent
-DATABASE_URL = "postgresql://postgres:Contab%402026@db.pygxxljdlfzliuotnte.supabase.co:5432/postgres"
+DATABASE_URL = "postgresql://postgres.pygxxljdlfzliuotnte:Contab%402026@aws-1-sa-east-1.pooler.supabase.com:6543/postgres"
 
 conn = psycopg2.connect(DATABASE_URL)
 DOCS_DIR = APP_DIR / "documentos_clientes"
